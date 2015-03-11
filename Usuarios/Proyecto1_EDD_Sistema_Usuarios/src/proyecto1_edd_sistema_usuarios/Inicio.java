@@ -61,6 +61,11 @@ public class Inicio extends javax.swing.JFrame {
         Identificarse.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         Identificarse.setForeground(new java.awt.Color(102, 0, 102));
         Identificarse.setText("Entrar");
+        Identificarse.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                IdentificarseActionPerformed(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(102, 255, 102));
@@ -136,6 +141,12 @@ public class Inicio extends javax.swing.JFrame {
         regis.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_crearusuarioActionPerformed
+
+    private void IdentificarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IdentificarseActionPerformed
+     Menu m = new Menu();
+     this.setVisible(false);
+     m.setVisible(true);
+    }//GEN-LAST:event_IdentificarseActionPerformed
 
     /**
      * @param args the command line arguments
